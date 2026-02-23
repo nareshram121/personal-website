@@ -1,61 +1,67 @@
 const experiences = [
   {
-    company: "Company Name",
-    role: "Senior Software Engineer",
-    period: "2022 – Present",
-    location: "Remote",
+    company: "Orchids — The International School",
+    role: "Chief Academic Officer",
+    period: "Present",
+    location: "Bangalore, India",
     description:
-      "Led development of core product features serving thousands of users. Mentored junior engineers and drove architectural decisions.",
+      "Leading academics across a chain of 120+ private schools across India. Responsible for curriculum, academic operations, quality standards, and educator development at scale.",
     highlights: [
-      "Reduced page load time by 40% through performance optimizations",
-      "Architected and shipped a real-time collaboration feature",
-      "Led a team of 4 engineers to deliver a major product milestone",
+      "Overseeing academic strategy and execution across 120+ schools",
+      "Driving curriculum innovation and learning outcome improvements",
+      "Managing large-scale educator training and development programs",
     ],
     color: "from-indigo-500 to-purple-600",
   },
   {
-    company: "Previous Company",
-    role: "Software Engineer",
-    period: "2020 – 2022",
-    location: "San Francisco, CA",
+    company: "Techademy",
+    role: "Chief Platform Officer",
+    period: "Prior",
+    location: "India",
     description:
-      "Full-stack engineer on a fast-growing startup. Built and maintained customer-facing features and internal tooling.",
+      "Led product strategy for an end-to-end Learning Experience Platform (LXP) for IT companies in India. The platform offered rich content, proctored assessments, mentoring, labs, community, gamification, and job postings.",
     highlights: [
-      "Built an analytics dashboard used by the entire sales team",
-      "Improved API response times by 60% through caching strategies",
-      "Contributed to open-source projects used by the company",
+      "Owned the product roadmap for a full-suite LXP serving enterprise IT clients",
+      "Integrated rich content, assessments with proctoring, mentoring, and labs",
+      "Drove gamification and community features to improve learner engagement",
     ],
     color: "from-pink-500 to-rose-500",
   },
   {
-    company: "First Job Inc.",
-    role: "Junior Developer",
-    period: "2018 – 2020",
-    location: "New York, NY",
+    company: "K12 Techno Services",
+    role: "Academic Operations & Business Leadership",
+    period: "Prior",
+    location: "India",
     description:
-      "Started my career here, worked on front-end development and learned the ropes of professional software development.",
+      "Held multiple leadership roles at the company that manages Orchids — The International School. Spanned academic operations, new business development (B2B and B2C), and branding and growth for the organisation.",
     highlights: [
-      "Developed responsive UI components used across the product",
-      "Participated in code reviews and agile sprint planning",
-      "Shipped 10+ features from design to production",
+      "Managed academic operations across a growing network of schools",
+      "Built new B2B and B2C business lines from the ground up",
+      "Led branding and growth initiatives for the Orchids network",
     ],
     color: "from-amber-500 to-orange-500",
   },
-];
-
-const education = [
   {
-    institution: "University Name",
-    degree: "B.S. Computer Science",
-    period: "2014 – 2018",
-    note: "Graduated with honors",
+    company: "Book Lovers Program for Schools / MsMoochie Books",
+    role: "Founder",
+    period: "Earlier",
+    location: "India",
+    description:
+      "Founded and ran a multi-faceted venture around reading and children's education. Delivered reading programs and storytelling sessions in schools, ran workshops for teachers, managed a children's publishing house, created reading apps, built IB curriculum content, ran a library and a performance space, and consulted with schools and publishing organisations.",
+    highlights: [
+      "Founded MsMoochie Books — a children's publishing house",
+      "Created kids reading apps and IB curriculum content",
+      "Ran a library, a performance space, and teacher workshops",
+      "Consulted with schools and publishing organisations across India",
+    ],
+    color: "from-emerald-500 to-teal-500",
   },
 ];
 
 const skills = {
-  "Frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
-  "Backend": ["Node.js", "Python", "PostgreSQL", "REST APIs", "GraphQL"],
-  "Tools & Infra": ["Git", "Docker", "AWS", "CI/CD", "Linux"],
+  "Education & Academics": ["Curriculum Design", "Academic Operations", "EdTech", "LXP Platforms", "IB Curriculum", "Teacher Training"],
+  "Product & Business": ["Product Strategy", "B2B & B2C", "Startup Building", "Business Development", "Brand & Growth"],
+  "Creative": ["Children's Publishing", "Storytelling", "Content Creation", "Writing", "App Development"],
 };
 
 export default function Experience() {
@@ -65,7 +71,7 @@ export default function Experience() {
         <h1 className="text-5xl font-black mb-4">
           My <span className="gradient-text">Experience</span>
         </h1>
-        <p className="text-gray-500 text-lg">Where I&apos;ve worked and what I&apos;ve built</p>
+        <p className="text-gray-500 text-lg">Two decades across education, startups, and product leadership</p>
       </div>
 
       {/* Work Experience */}
@@ -106,26 +112,9 @@ export default function Experience() {
         </div>
       </section>
 
-      {/* Education */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Education</h2>
-        {education.map((edu, i) => (
-          <div key={i} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-bold text-gray-900">{edu.degree}</h3>
-                <p className="text-indigo-600 font-semibold">{edu.institution}</p>
-                <p className="text-gray-400 text-sm mt-1">{edu.note}</p>
-              </div>
-              <span className="text-sm text-gray-500 font-medium">{edu.period}</span>
-            </div>
-          </div>
-        ))}
-      </section>
-
       {/* Skills */}
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Skills</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Skills & Expertise</h2>
         <div className="grid sm:grid-cols-3 gap-4">
           {Object.entries(skills).map(([category, items]) => (
             <div key={category} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">

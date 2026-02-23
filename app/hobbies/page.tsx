@@ -1,63 +1,93 @@
 const hobbies = [
   {
-    emoji: "🎸",
-    title: "Music",
+    emoji: "📚",
+    title: "Books & Reading",
     description:
-      "Playing guitar is my creative outlet. From strumming chords on a quiet evening to jamming along to favorite songs, music keeps me grounded.",
-    tags: ["Guitar", "Listening", "Concerts"],
+      "Books are at the core of who I am — I ran a children's publishing house and a library because I love them that much. From fiction to philosophy to kids' lit, my reading list never ends.",
+    tags: ["Fiction", "Children's Books", "Non-Fiction", "IB Curriculum"],
     color: "from-indigo-500 to-purple-600",
     bg: "from-indigo-50 to-purple-50",
     border: "border-indigo-100",
   },
   {
-    emoji: "📚",
-    title: "Reading",
+    emoji: "✍️",
+    title: "Writing",
     description:
-      "I love getting lost in a good book — whether it's a sci-fi novel, a philosophy deep dive, or the latest tech release.",
-    tags: ["Sci-Fi", "Non-Fiction", "Tech Books"],
+      "I write — and aspire to write a lot more. Books and screenplays are on the bucket list. Storytelling is how I make sense of the world.",
+    tags: ["Screenplays", "Books", "Storytelling", "Content"],
     color: "from-pink-500 to-rose-500",
     bg: "from-pink-50 to-rose-50",
     border: "border-pink-100",
   },
   {
-    emoji: "🏃",
-    title: "Running",
+    emoji: "🎬",
+    title: "Movies",
     description:
-      "Running clears my head. I try to hit the trails a few times a week. There's something meditative about putting one foot in front of the other.",
-    tags: ["Trail Running", "5K", "Fitness"],
+      "A proper film person. Cinema is storytelling at its most visceral. I love a good screenplay as much as a great performance.",
+    tags: ["Cinema", "Screenwriting", "Storytelling"],
     color: "from-amber-500 to-orange-500",
     bg: "from-amber-50 to-orange-50",
     border: "border-amber-100",
   },
   {
-    emoji: "🍳",
-    title: "Cooking",
+    emoji: "🎲",
+    title: "Board Games",
     description:
-      "Experimenting in the kitchen is my version of a side project. I love trying recipes from different cultures and making them my own.",
-    tags: ["World Cuisine", "Baking", "Meal Prep"],
+      "There's something wonderful about sitting around a table with real people and a well-designed game. Strategy, luck, and a lot of trash talk.",
+    tags: ["Strategy", "Family Games", "Game Design"],
     color: "from-emerald-500 to-teal-500",
     bg: "from-emerald-50 to-teal-50",
     border: "border-emerald-100",
   },
   {
-    emoji: "🎮",
-    title: "Gaming",
+    emoji: "🕹️",
+    title: "Retro Games & Apps",
     description:
-      "A good story-driven game is hard to beat. I enjoy RPGs and strategy games that make you think — and the occasional multiplayer session.",
-    tags: ["RPGs", "Strategy", "Indie Games"],
+      "Old-school games have a charm that modern AAA titles often miss. I love tinkering with apps and exploring what makes great digital experiences.",
+    tags: ["Retro Gaming", "App Design", "Logic Puzzles"],
     color: "from-cyan-500 to-blue-500",
     bg: "from-cyan-50 to-blue-50",
     border: "border-cyan-100",
   },
   {
-    emoji: "✈️",
-    title: "Traveling",
+    emoji: "🍳",
+    title: "Cooking",
     description:
-      "Exploring new places, cultures, and cuisines is one of my greatest joys. Every trip teaches me something new about the world and myself.",
-    tags: ["Backpacking", "Food Tourism", "Photography"],
-    color: "from-violet-500 to-pink-500",
-    bg: "from-violet-50 to-pink-50",
+      "Cooking is my creative outlet away from screens. I experiment with flavours and cuisines — the kitchen is just another kind of lab.",
+    tags: ["World Cuisine", "Experimenting", "Family Meals"],
+    color: "from-orange-400 to-red-400",
+    bg: "from-orange-50 to-red-50",
+    border: "border-orange-100",
+  },
+  {
+    emoji: "📈",
+    title: "Stock Market",
+    description:
+      "I find markets fascinating — the psychology, the patterns, the chaos. I follow global equities and enjoy the intellectual puzzle of it all.",
+    tags: ["Equities", "Markets", "Investing"],
+    color: "from-violet-500 to-indigo-500",
+    bg: "from-violet-50 to-indigo-50",
     border: "border-violet-100",
+  },
+  {
+    emoji: "🌍",
+    title: "Global Geopolitics",
+    description:
+      "The world is a complex, fascinating place. I follow international affairs, power shifts, and the forces that shape how countries and people relate to each other.",
+    tags: ["International Affairs", "History", "Policy"],
+    color: "from-teal-500 to-cyan-500",
+    bg: "from-teal-50 to-cyan-50",
+    border: "border-teal-100",
+  },
+  {
+    emoji: "🦸",
+    title: "Comics & Children's Toys",
+    description:
+      "Comics are literature and I will die on that hill. Also, a good toy is a masterpiece of design — I have a deep appreciation for both.",
+    tags: ["Comics", "Graphic Novels", "Toy Design"],
+    color: "from-rose-500 to-pink-500",
+    bg: "from-rose-50 to-pink-50",
+    border: "border-rose-100",
   },
 ];
 
@@ -69,7 +99,7 @@ export default function Hobbies() {
           Hobbies &amp; <span className="gradient-text">Interests</span>
         </h1>
         <p className="text-gray-500 text-lg max-w-xl mx-auto">
-          Life beyond the code — the things that make me who I am.
+          Life beyond work — the things that make me who I am.
         </p>
       </div>
 
@@ -100,9 +130,9 @@ export default function Hobbies() {
 
       <div className="mt-16 bg-white rounded-2xl border border-gray-100 shadow-sm p-10 text-center">
         <p className="text-3xl mb-3">🌟</p>
-        <p className="text-xl font-bold text-gray-800 mb-2">Always Curious, Always Growing</p>
+        <p className="text-xl font-bold text-gray-800 mb-2">Curious about everything, committed to a few.</p>
         <p className="text-gray-500 max-w-md mx-auto text-sm">
-          These are just a few of my passions. I&apos;m always picking up new hobbies and interests — because life&apos;s too short to stop exploring.
+          Life&apos;s too interesting to pick just one lane. I&apos;m always reading something, watching something, or building something new.
         </p>
       </div>
     </div>

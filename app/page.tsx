@@ -8,14 +8,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-pink-50 to-amber-50 opacity-60" />
         <div className="relative max-w-6xl mx-auto px-6 py-32 text-center">
           <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-sm font-semibold">
-            Welcome to my corner of the internet
+            Entrepreneur · Product Builder · Educator · Bangalore, India
           </div>
           <h1 className="text-6xl sm:text-7xl font-black tracking-tight mb-6">
             Hi, I&apos;m{" "}
             <span className="gradient-text">Naresh</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            A passionate developer who loves building things, exploring ideas, and sharing what I learn along the way.
+            I build products, shape education systems, and explore ideas across technology, books, and storytelling. Currently Chief Academic Officer at Orchids — The International School.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -25,10 +25,10 @@ export default function Home() {
               About Me
             </Link>
             <Link
-              href="/projects"
+              href="/experience"
               className="px-8 py-3 rounded-full border-2 border-gray-300 text-gray-700 font-semibold hover:border-indigo-400 hover:text-indigo-600 transition-all duration-200"
             >
-              See My Work
+              My Journey
             </Link>
           </div>
         </div>
@@ -45,35 +45,35 @@ export default function Home() {
               href: "/about",
               emoji: "👋",
               title: "About Me",
-              desc: "Learn about who I am, my background, and what drives me.",
+              desc: "Entrepreneur, educator, pseudo-techie, and dad. Here's the full story.",
               color: "from-indigo-500 to-purple-600",
             },
             {
               href: "/projects",
               emoji: "🚀",
               title: "Projects",
-              desc: "A showcase of things I've built — from side projects to big ideas.",
+              desc: "From edtech platforms to children's books — things I've built and shipped.",
               color: "from-pink-500 to-rose-500",
             },
             {
               href: "/experience",
               emoji: "💼",
               title: "Experience",
-              desc: "My professional journey, skills, and accomplishments.",
+              desc: "Two decades across education, startups, and product leadership.",
               color: "from-amber-500 to-orange-500",
             },
             {
               href: "/blog",
               emoji: "✍️",
               title: "Blog",
-              desc: "Thoughts, tutorials, and reflections on tech and life.",
+              desc: "Writing about education, books, parenting, and building things.",
               color: "from-emerald-500 to-teal-500",
             },
             {
               href: "/hobbies",
               emoji: "🎨",
               title: "Hobbies",
-              desc: "What I get up to when I'm not in front of a screen.",
+              desc: "Board games, comics, retro games, cooking, stock markets and more.",
               color: "from-cyan-500 to-blue-500",
             },
           ].map(({ href, emoji, title, desc, color }) => (

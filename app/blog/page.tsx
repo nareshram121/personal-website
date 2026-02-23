@@ -1,43 +1,43 @@
 const posts = [
   {
-    title: "Why I Switched to Next.js (And Never Looked Back)",
+    title: "What 120 Schools Taught Me About Scale",
     excerpt:
-      "A deep dive into what makes Next.js so compelling for modern web development, from the App Router to server components.",
-    date: "February 15, 2026",
-    readTime: "5 min read",
-    tags: ["Next.js", "React", "Web Dev"],
-    color: "from-indigo-500 to-purple-600",
-    emoji: "⚡",
-  },
-  {
-    title: "The Art of Writing Clean Code",
-    excerpt:
-      "Clean code isn't just about aesthetics — it's about communication. Here's what I've learned from years of reading and writing code.",
-    date: "January 28, 2026",
+      "Managing academics across 120+ schools isn't just an operational challenge — it's a lesson in how systems, culture, and people interact at scale. Here's what I've learned.",
+    date: "Coming Soon",
     readTime: "8 min read",
-    tags: ["Programming", "Best Practices"],
+    tags: ["Education", "Leadership", "Scale"],
+    color: "from-indigo-500 to-purple-600",
+    emoji: "🏫",
+  },
+  {
+    title: "Why Every Product Builder Should Read Children's Books",
+    excerpt:
+      "Children's books are the most ruthlessly edited artefacts in publishing. Clarity, empathy, and storytelling — they have a lot to teach us about product design.",
+    date: "Coming Soon",
+    readTime: "5 min read",
+    tags: ["Product", "Books", "Storytelling"],
     color: "from-pink-500 to-rose-500",
-    emoji: "✨",
+    emoji: "📖",
   },
   {
-    title: "Building Faster APIs: Lessons from the Trenches",
+    title: "The LXP Problem: Why Most Corporate Learning Platforms Fail",
     excerpt:
-      "Performance optimization is more art than science. I share the strategies that have made the biggest difference in real-world projects.",
-    date: "January 10, 2026",
+      "After building and leading an LXP for enterprise IT companies, I have strong opinions about why most platforms miss the mark — and what it actually takes to drive learning at work.",
+    date: "Coming Soon",
     readTime: "10 min read",
-    tags: ["Backend", "Performance", "APIs"],
+    tags: ["EdTech", "LXP", "Product"],
     color: "from-amber-500 to-orange-500",
-    emoji: "🔥",
+    emoji: "🎓",
   },
   {
-    title: "My 2025 Retrospective: What I Built and What I Learned",
+    title: "On Raising Kids in a World Full of Screens",
     excerpt:
-      "A look back at the year — the projects, the failures, the wins, and everything I'd do differently.",
-    date: "December 31, 2025",
+      "I've spent my career in education and technology. I've also got a kid. The tension between those two things keeps me thinking.",
+    date: "Coming Soon",
     readTime: "6 min read",
-    tags: ["Reflection", "Career"],
+    tags: ["Parenting", "Tech", "Reflection"],
     color: "from-emerald-500 to-teal-500",
-    emoji: "🌱",
+    emoji: "👨‍👧",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Blog() {
           The <span className="gradient-text">Blog</span>
         </h1>
         <p className="text-gray-500 text-lg max-w-xl mx-auto">
-          Thoughts on software, design, and everything in between.
+          Writing about education, books, products, parenting, and the messy overlap between them all.
         </p>
       </div>
 
@@ -90,9 +90,9 @@ export default function Blog() {
       </div>
 
       <div className="mt-12 text-center bg-gradient-to-br from-indigo-50 to-pink-50 rounded-2xl p-10 border border-indigo-100">
-        <p className="text-2xl font-bold text-gray-800 mb-2">More posts coming soon!</p>
+        <p className="text-2xl font-bold text-gray-800 mb-2">Posts are on their way!</p>
         <p className="text-gray-500 text-sm">
-          Replace these placeholder posts with your real articles. Consider using MDX for rich blog content.
+          I have a lot to say about education, books, and building things. Watch this space.
         </p>
       </div>
     </div>

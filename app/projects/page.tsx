@@ -1,56 +1,65 @@
 const projects = [
   {
-    title: "Project Alpha",
+    title: "Techademy LXP",
     description:
-      "A full-stack web application that helps teams collaborate in real time. Built with Next.js, WebSockets, and PostgreSQL.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSockets"],
+      "An end-to-end Learning Experience Platform for IT companies in India — featuring rich content libraries, proctored assessments, mentoring, virtual labs, community forums, gamification, and job postings.",
+    tags: ["EdTech", "LXP", "Product", "Enterprise"],
     color: "from-indigo-500 to-purple-600",
-    emoji: "🚀",
+    emoji: "🎓",
     status: "Live",
   },
   {
-    title: "Project Beta",
+    title: "MsMoochie Books",
     description:
-      "An open-source CLI tool that automates repetitive development workflows. Used by hundreds of developers.",
-    tags: ["Node.js", "CLI", "Open Source"],
+      "A children's publishing house focused on books that spark curiosity and a love of reading. Published original titles for young readers across India.",
+    tags: ["Publishing", "Children's Books", "Startup"],
     color: "from-pink-500 to-rose-500",
-    emoji: "⚙️",
-    status: "Open Source",
+    emoji: "📖",
+    status: "Founded",
   },
   {
-    title: "Project Gamma",
+    title: "Book Lovers Program for Schools",
     description:
-      "A machine learning powered app that classifies and organizes personal data intelligently.",
-    tags: ["Python", "ML", "React", "FastAPI"],
+      "A reading enrichment program delivered across schools — combining storytelling sessions for kids, teacher workshops, IB curriculum content, and a running library and performance space.",
+    tags: ["Education", "Reading", "Curriculum", "IB"],
     color: "from-amber-500 to-orange-500",
-    emoji: "🧠",
-    status: "In Progress",
+    emoji: "📚",
+    status: "Founded",
   },
   {
-    title: "Project Delta",
+    title: "Kids Reading Apps",
     description:
-      "A beautifully designed mobile-first e-commerce storefront with blazing fast performance.",
-    tags: ["React", "Tailwind CSS", "Stripe", "Vercel"],
+      "Designed and shipped mobile reading apps for children, blending interactive storytelling with early literacy tools.",
+    tags: ["Mobile", "EdTech", "Kids", "Literacy"],
     color: "from-emerald-500 to-teal-500",
-    emoji: "🛍️",
+    emoji: "📱",
+    status: "Shipped",
+  },
+  {
+    title: "Orchids Academic Operations",
+    description:
+      "Overseeing academic systems, curriculum, and quality standards across 120+ private schools in India — one of the country's largest school chains.",
+    tags: ["Education", "Operations", "Scale", "Curriculum"],
+    color: "from-cyan-500 to-blue-500",
+    emoji: "🏫",
     status: "Live",
   },
   {
-    title: "Project Epsilon",
+    title: "K12 B2B & B2C Business Lines",
     description:
-      "A developer tool for managing and visualizing complex API schemas and relationships.",
-    tags: ["TypeScript", "GraphQL", "D3.js"],
-    color: "from-cyan-500 to-blue-500",
-    emoji: "📊",
-    status: "Beta",
+      "Built new business lines for K12 Techno Services — spanning direct-to-school B2B services and consumer-facing B2C education products.",
+    tags: ["B2B", "B2C", "Business Development", "EdTech"],
+    color: "from-violet-500 to-pink-500",
+    emoji: "💼",
+    status: "Built",
   },
 ];
 
 const statusColors: Record<string, string> = {
   Live: "bg-emerald-100 text-emerald-700",
-  "Open Source": "bg-purple-100 text-purple-700",
-  "In Progress": "bg-amber-100 text-amber-700",
-  Beta: "bg-blue-100 text-blue-700",
+  Founded: "bg-purple-100 text-purple-700",
+  Shipped: "bg-blue-100 text-blue-700",
+  Built: "bg-amber-100 text-amber-700",
 };
 
 export default function Projects() {
@@ -61,7 +70,7 @@ export default function Projects() {
           My <span className="gradient-text">Projects</span>
         </h1>
         <p className="text-gray-500 text-lg max-w-xl mx-auto">
-          A collection of things I&apos;ve built, shipped, and experimented with.
+          Platforms, publishing houses, programs, and products — things I&apos;ve built from scratch.
         </p>
       </div>
 
@@ -98,10 +107,10 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="mt-16 text-center bg-white rounded-2xl border border-gray-100 shadow-sm p-10">
-        <p className="text-2xl font-bold text-gray-800 mb-2">More coming soon!</p>
+      <div className="mt-16 text-center bg-gradient-to-br from-indigo-50 to-pink-50 rounded-2xl border border-indigo-100 p-10">
+        <p className="text-2xl font-bold text-gray-800 mb-2">Always building something new.</p>
         <p className="text-gray-500">
-          I&apos;m always building something new. Update this page with your real projects.
+          Aspiring to write books and screenplays — next chapters in the making.
         </p>
       </div>
     </div>
