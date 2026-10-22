@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hobbies",
+  description:
+    "Books, writing, movies, board games, retro games, cooking, markets and more — what Naresh Ramamurthy does for fun.",
+};
+
 const hobbies = [
   {
     emoji: "📚",

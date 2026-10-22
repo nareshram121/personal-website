@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Experience",
+  description:
+    "Naresh Ramamurthy's career across K12 education, EdTech and enterprise learning, including Chief Academic Officer at Orchids.",
+};
+
 const experiences = [
   {
     company: "Orchids — The International School",

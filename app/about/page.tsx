@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import { socials } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "About Naresh Ramamurthy — entrepreneur, product builder and educator based in Bangalore.",
+};
+
 export default function About() {
   const skills = [
     "Product Strategy", "EdTech", "LXP Platforms", "Curriculum Design",
@@ -19,12 +29,32 @@ export default function About() {
       <div className="grid md:grid-cols-3 gap-12 items-start">
         {/* Avatar */}
         <div className="flex flex-col items-center gap-4">
-          <div className="w-48 h-48 rounded-2xl gradient-bg flex items-center justify-center shadow-xl">
-            <span className="text-7xl">👨‍👧</span>
+          <div className="p-1 rounded-2xl gradient-bg shadow-xl">
+            <Image
+              src="/naresh.jpg"
+              alt="Naresh Ramamurthy"
+              width={192}
+              height={192}
+              priority
+              className="w-48 h-48 rounded-xl object-cover"
+            />
           </div>
           <div className="text-center">
             <h2 className="font-bold text-xl text-gray-900">Naresh Ramamurthy</h2>
             <p className="text-indigo-600 font-medium text-sm">Bangalore, India</p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-2">
+            {socials.map(({ label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                className="px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-semibold text-gray-600 hover:border-indigo-400 hover:text-indigo-600 transition-all"
+              >
+                {label}
+              </a>
+            ))}
           </div>
         </div>
 
@@ -37,6 +67,9 @@ export default function About() {
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               I currently serve as the Chief Academic Officer at Orchids — The International School, where I oversee academics across 120+ private schools across India. Before that, I led product at Techademy, an end-to-end LXP for IT companies in India, and held multiple leadership roles at K12 Techno Services.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Lately I&apos;ve gone back to building with my own hands. With an AI coding assistant, I&apos;ve been shipping real tools for our schools: AI-assisted teaching insights from classroom audio, a house system and leaderboard for 120+ schools, and a daily puzzle app for kids.
             </p>
             <p className="text-gray-600 leading-relaxed">
               My earliest venture was the Book Lovers Program for Schools — a reading program, a children&apos;s publishing house (MsMoochie Books), a library, a performance space, and an IB curriculum content studio all rolled into one. I&apos;ve always loved building things from scratch.
@@ -64,7 +97,7 @@ export default function About() {
       <div className="mt-16 bg-gradient-to-br from-indigo-50 to-pink-50 rounded-2xl border border-indigo-100 p-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">What I Can Talk About</h2>
         <div className="flex flex-wrap gap-3 justify-center">
-          {["Writing & Storytelling", "Education & EdTech", "Books & Reading", "Working with Kids with CP", "Raising Kids", "Product Building", "Entrepreneurship"].map((topic) => (
+          {["Writing & Storytelling", "Education & EdTech", "AI in Education", "Books & Reading", "Working with Kids with CP", "Raising Kids", "Product Building", "Entrepreneurship"].map((topic) => (
             <span key={topic} className="px-4 py-2 rounded-full bg-white text-gray-700 font-medium text-sm border border-indigo-100 shadow-sm">
               {topic}
             </span>

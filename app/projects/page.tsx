@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Products and programs built by Naresh Ramamurthy — Techademy LXP, MsMoochie Books, kids reading apps and more.",
+};
+
 const projects = [
   {
     title: "Techademy LXP",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,6 +8,16 @@ export default function Home() {
       <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-pink-50 to-amber-50 opacity-60" />
         <div className="relative max-w-6xl mx-auto px-6 py-32 text-center">
+          <div className="mx-auto mb-8 w-36 h-36 p-1 rounded-full gradient-bg shadow-xl">
+            <Image
+              src="/naresh.jpg"
+              alt="Naresh Ramamurthy"
+              width={144}
+              height={144}
+              priority
+              className="w-full h-full rounded-full object-cover border-4 border-white"
+            />
+          </div>
           <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-sm font-semibold">
             Entrepreneur · Product Builder · Educator · Bangalore, India
           </div>
